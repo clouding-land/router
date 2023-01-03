@@ -3,6 +3,7 @@ import Products from './Pages/Products';
 // import Products from '../Pages/Products'
 import Home from './Pages/Home'
 import Dashboard from './Pages/Dashboard'
+import Setting from './Pages/Setting'
 import Login from './Pages/Login'
 import Nav from './Components/Nav'
 import {Routes, Route, Navigate} from "react-router-dom"
@@ -24,9 +25,9 @@ function App() {
             <Dashboard/>
           </PrivateRoute>
         } />
-        <Route path="/products/:id" element={
+        <Route path="/dashboard/setting" element={
           <PrivateRoute>
-            <Products/>
+            <Setting/>
           </PrivateRoute>
         } />
         <Route path="/login" element={<Login/>} />

@@ -13,7 +13,7 @@ export default function Nav() {
       <span><Link to="/home">Home</Link></span>
       <span><Link to="/dashboard">Dashboard</Link></span>
       {!auth.token?(<span><Link to="/login">Login</Link></span>):(<></>)}
-      {auth.token?(<button onClick={handleLogout}>Logout</button>):(<></>)}
+      {auth.token?(<span><button onClick={handleLogout}>Logout</button></span>):(<></>)}
     </div>
   )
 }
